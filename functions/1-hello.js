@@ -1,10 +1,11 @@
 // domain/.netlify/functions/1-hello
 // http://localhost:8888/.netlify/functions/1-hello
+// exports.handler = async (req, res, callback) => {
 // const person = { name: "john" };
 
-exports.handler = async (event, context, cb) => {
+exports.handler = async (event, context) => {
   return {
     statusCode: 200,
-    body: "Our First Netlify Function Example",
+    body: "Netlify Serverless Function",
   };
 };
