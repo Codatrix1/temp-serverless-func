@@ -188,7 +188,9 @@ Examples
 }
 .examples a {
   letter-spacing: var(--spacing);
-  color: var(--clr-red-dark);
+  /* color: var(--clr-red-dark); */
+  color: #333;
+  font-size: 20px;
   transition: var(--transition);
   display: block;
   margin-bottom: 0.75rem;
