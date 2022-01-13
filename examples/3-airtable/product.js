@@ -9,14 +9,11 @@ const fetchProduct = async () => {
     //   data: { fields },
     // } = await axios.get(`/api/3-product${id}`);+
 
-    // const {
-    //   data: { fields },
-    // } = await axios.get(`/api/3-z-complete${id}`);
-
-    // const { name, description, price, images } = fields;
     const {
-      data: { name, description, price, images },
+      data: { fields },
     } = await axios.get(`/api/3-z-complete${id}`);
+
+    const { name, description, price, images } = fields;
 
     result.innerHTML = `<h1 class="title">${name}</h1>
   <article class="product">
