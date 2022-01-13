@@ -21,7 +21,7 @@ exports.handler = async (event, context, cb) => {
         };
       }
 
-      const productFinal = { id, ...product };
+      const productFinal = { product: { ...product } };
       return {
         headers: {
           "Access-Control-Allow-Origin": "*",
