@@ -20,12 +20,14 @@ exports.handler = async (event, context, cb) => {
           body: `No product with id: ${id}`,
         };
       }
+
+      const productFinal = { id, ...product };
       return {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
         statusCode: 200,
-        body: JSON.stringify(product),
+        body: JSON.stringify(productFinal),
       };
     } catch (error) {
       return {
