@@ -21,13 +21,13 @@ exports.handler = async (event, context, cb) => {
         };
       }
 
-      const productFinal = { id, ...product };
+      // const productFinal = { id, ...product };
       return {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
         statusCode: 200,
-        body: JSON.stringify(productFinal),
+        body: JSON.stringify(product),
       };
     } catch (error) {
       return {
