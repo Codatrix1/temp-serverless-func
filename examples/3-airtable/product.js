@@ -8,9 +8,7 @@ const fetchProduct = async () => {
     // const {
     //   data: { fields },
     // } = await axios.get(`/api/3-product${id}`);
-    const {
-      data: { fields },
-    } = await axios.get(`/api/3-z-complete${id}`);
+    const { fields } = await axios.get(`/api/3-z-complete${id}`);
 
     const { name, description, price, images } = fields;
 
