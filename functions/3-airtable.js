@@ -19,6 +19,10 @@ exports.handler = async (event, context, cb) => {
         company,
         category,
         shipping,
+        stock,
+        stars,
+        reviews,
+        featured,
       } = product.fields;
 
       const image = images[0].url;
@@ -32,6 +36,10 @@ exports.handler = async (event, context, cb) => {
         company,
         category,
         shipping,
+        stock,
+        stars,
+        reviews,
+        featured,
       };
     });
     return {
